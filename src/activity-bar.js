@@ -94,7 +94,7 @@ class LocationTreeProvider  {
 
         const modListCategorizedByFilePath = categorizeByAttr(modList, 'targetFilePath');
 
-        var modTree = [];
+        const modTree = [];
         for (const filePath in modListCategorizedByFilePath) {  
             modTree.push(this.getFileItem(filePath, modListCategorizedByFilePath[filePath]))
         }
